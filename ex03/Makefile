@@ -1,8 +1,8 @@
-SRCS = main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
+SRCS = main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp
 OFILES = $(SRCS:.cpp=.o)
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = Form28B
+CFLAGS = -Wall -Wextra -Werror -std=c++98 
+NAME = Intern
 
 all: $(NAME)
 

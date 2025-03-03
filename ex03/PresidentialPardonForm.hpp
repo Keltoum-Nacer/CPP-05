@@ -11,6 +11,7 @@ class PresidentialPardonForm : public Form
         PresidentialPardonForm(const PresidentialPardonForm &other);
         PresidentialPardonForm& operator=(const PresidentialPardonForm& other);
         ~PresidentialPardonForm();
+        static Form* createForm(std::string target);
         void execute(const Bureaucrat &executor) const;
 };
 

@@ -2,7 +2,7 @@ SRCS = main.cpp Bureaucrat.cpp Form.cpp
 OFILES = $(SRCS:.cpp=.o)
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = Bureaucrat
+NAME = Form
 
 all: $(NAME)
 

@@ -15,6 +15,11 @@ PresidentialPardonForm& PresidentialPardonForm::operator=(const PresidentialPard
 
 PresidentialPardonForm::~PresidentialPardonForm() {}
 
+Form* PresidentialPardonForm::createForm(std::string target)
+{
+    return(new PresidentialPardonForm(target));
+}
+
 void PresidentialPardonForm::execute(const Bureaucrat &executor) const
 {
         Form::checkForm(executor);

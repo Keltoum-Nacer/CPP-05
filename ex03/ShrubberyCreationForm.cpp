@@ -15,6 +15,11 @@ ShrubberyCreationForm& ShrubberyCreationForm::operator=(const ShrubberyCreationF
 
 ShrubberyCreationForm::~ShrubberyCreationForm(){}
 
+Form* ShrubberyCreationForm::createForm(std::string target)
+{
+    return(new ShrubberyCreationForm(target));
+}
+
 void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
 {
     Form::checkForm(executor);

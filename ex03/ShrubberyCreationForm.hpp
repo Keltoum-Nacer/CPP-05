@@ -1,3 +1,5 @@
+
+
 #ifndef SHRUBBERYCREATIONFORM_HPP
 #define SHRUBBERYCREATIONFORM_HPP
 
@@ -12,6 +14,7 @@ class ShrubberyCreationForm : public Form
         ShrubberyCreationForm(const ShrubberyCreationForm& form);
         ShrubberyCreationForm& operator=(const ShrubberyCreationForm& form);
         ~ShrubberyCreationForm();
+        static Form* createForm(std::string target);
         void execute(Bureaucrat const & executor) const;
 };
 
